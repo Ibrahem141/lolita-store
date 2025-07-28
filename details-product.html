@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lolita Store|Details</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- LIBRARY BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <!--// LIBRARY BOOTSTRAP CSS //-->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <!-- //Font Awesome //-->
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg w-100">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="">
+                <img width="100px" src="image/Lolita Logo-copy.png" alt="logo" loading="lazy">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" href="#show-navbar">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </button>
+
+
+            <div class="collapse navbar-collapse nav" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">المتجر</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="who-are-we.html">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">تواصل معنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">حسابى</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <b>150 ج.م</b>
+                <button class="btn-card" data-bs-toggle="offcanvas" href="#card" class=" menu-icon" type="button">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="product-details w-100 d-flex justify-content-around mt-5 mb-3 ">
+            <div class="img-product" style="width: 40%;">
+                <img src="image/92652-600x600.webp" alt="" style="width: 100%; height: 100%;" loading="lazy">
+            </div>
+            <div class="info-product" style="width: 40%;">
+                <p class="info-p" style="font-size: 40px;">اسوره فصوص خضراء استانلس</p>
+                <b style="font-size: 35px;">100 ج.م</b>
+                <div class="mt-5 d-flex justify-content-around">
+                    <input style="width: 40px;" " id="number-input" type="number" name=""">
+                    <a href="" class="w-75" ><button class="btn btn-danger w-100" id="btn-add-card">إضافه الى السله</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="text-center">جميع الحقوق محفوظة &copy; 2025| <a style="color: black;"
+                            href="index.html">Lolita Store</a></p>
+                </div>
+                <!-- SOCHIAL MEDIA -->
+                <div class="all-sochial-media">
+                    <div class="social d-flex justify-content-between">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-telegram"></i></a>
+                        <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <!--// SOCHIAL MEDIA //-->
+
+            </div>
+        </div>
+    </footer>
+    <!--// FOOTER //-->
+
+
+
+    <!-- LINK WHATS APP -->
+    <a href="https://wa.me/+201093985171" class="btn-whatsapp" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <!--// LINK WHATS APP //-->
+
+
+
+    <!-- MODAL SHOW NAVBAR -->
+
+    <div class="offcanvas offcanvas-start " tabindex="-1" id="show-navbar" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body modal-nav">
+            <ul>
+                <li>
+                    <a href="index.html">المتجر</a>
+                </li>
+                <li>
+                    <a href="who-are-we.html">من نحن</a>
+                </li>
+                <li>
+                    <a href="contact-us.html">تواصل معنا</a>
+                </li>
+                <li>
+                    <a href="login.html">حسابى</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- MODAL CARD -->
+    <div class="offcanvas offcanvas-start " tabindex="-1" id="card" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="card">سلة المشتريات</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="row row-cols-1 d-block row-mini-card m-1">
+                <div class="col mini-card d-flex justify-content-between align-items-center">
+                    <img class="img-fluid w-25 rounded" src="image/92652-600x600.webp" alt="products">
+                    <p>اسوره بلغاري استانلس كود a224</p>
+
+                    <div class="btn-group btns-quantity-mini">
+                        <button type="button" class="btn">+</button>
+                        <button type="button" class="btn">1</button>
+                        <button type="button" class="btn">-</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d-flex flex-column gap-2">
+                <!-- <p class="alert alert-danger p-3 my-3 text-center">مجموع المنتجات 250000$ فقط لاغير</p> -->
+                <a href="index.html"><button class="btn btn-primary w-100">تكملة التسوق </button></a>
+                <a href="complete-the-order.html"><button class="btn btn-danger w-100">إتمام الطلب</button></a>
+            </div>
+        </div>
+    </div>
+    <!-- LIBRARY BOOTSTRAP JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <!--// LIBRARY BOOTSTRAP JS //-->
+    <script src="text.js"></script>
+</body>
+
+</html>
